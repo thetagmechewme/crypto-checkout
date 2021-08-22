@@ -8,9 +8,9 @@ import {CryptoService} from '../types/crypto.service';
 export class CryptoCheckout extends LitElement {
   static styles = css`
     :host {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      font-family: -apple-system, BlinkMacSystemFont, "Papyrus", "Irish Grover", "Segoe UI Emoji", "Segoe UI Symbol";
       font-size: 16px;
-      color: #000;
+      color: #07a30c;
     }
 
     .cc {
@@ -173,7 +173,7 @@ export class CryptoCheckout extends LitElement {
     }
   `;
 
-  @property({type: Boolean}) waitForConfirmation = false;
+  @property({type: Boolean}) waitForConfirmation = true;
   @property({type: Boolean}) target = false;
   @property({type: Boolean}) closeOnEscape = true;
   @property({type: Boolean}) lockCoin = false;
